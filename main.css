@@ -1,14 +1,72 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
+    scroll-behavior: smooth;
 }
 
-body {
+.card {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    background: #363739;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.center {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Bitter', serif;
+}
+
+.relative {
+    position: relative;
+}
+
+.arrow-down {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    border: 3px solid #363739;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logo {
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.email {
+    font-size: 2rem;
+    word-wrap: anywhere;
 }
