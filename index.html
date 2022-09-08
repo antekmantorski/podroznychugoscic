@@ -15,28 +15,20 @@
 <body>
 <div class="full-size flex-center container">
     <img class="logo" src="logo.jpg" alt="logo">
-    <div class="arrow-down-icon flex-center">
-        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <title>ic_fluent_arrow_down_28_regular</title>
-            <desc>Created with Sketch.</desc>
-            <g id="🔍-System-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="ic_fluent_arrow_down_28_regular" fill="#212121" fill-rule="nonzero">
-                    <path d="M23.7916,15.2664 C24.0788,14.9679 24.0696,14.4931 23.7711,14.206 C23.4726,13.9188 22.9978,13.928 22.7106,14.2265 L14.7511,22.5007 L14.7511,3.74792 C14.7511,3.33371 14.4153,2.99792 14.0011,2.99792 C13.5869,2.99792 13.2511,3.33371 13.2511,3.74793 L13.2511,22.4998 L5.29259,14.2265 C5.00543,13.928 4.53064,13.9188 4.23213,14.206 C3.93361,14.4931 3.9244,14.9679 4.21157,15.2664 L13.2809,24.6944 C13.6743,25.1034 14.3289,25.1034 14.7223,24.6944 L23.7916,15.2664 Z" id="🎨-Color"></path>
-                </g>
-            </g>
-        </svg>
-        <script>
-            document.querySelector('.arrow-down-icon')
-                .addEventListener('click', () => {
-                    console.log('click')
-                    window.scroll(0, window.innerHeight);
-                });
-        </script>
+    <div class="nav-links flex-center">
+        <div class="arrow-down-icon">
+            ↓
+        </div>
+        <a href="#o_nas">O nas</a>
+        <a href="#wesprzyj">Wesprzyj nas</a>
+        <a href="#regulamin">Redulamin</a>
+        <a href="#social">Socjalmedia</a>
+        <a href="#kontakt">Kontakt</a>
     </div>
 </div>
 
 <div class="container">
-    <h1 class="background-1">O nas</h1>
+    <h1 id="o_nas" class="background-1">O nas</h1>
     <p>Nasze działania rozpoczynaliśmy jako grupa przyjaciół jeżdżących pomagać na granice polsko-białoruską. Od lutego 2022 roku działamy jako Stowarzyszenie Podróżnych Ugościć.</p>
     <p>Do czerwca tego roku skupialiśmy się głównie na pomocy osobom przebywającym w Strzeżonych Ośrodkach dla Cudzoziemców. Na naszych mediach społecznościowych zorganizowaniśmy trwającą kilka miesięcy akcje. Jej celem było zaangażowanie prywatnych osób z całej Polski w przygotowanie paczek dla konkretnych osób przebywających w ośrodkach zamkniętych. Każdy kompletujący paczkę znał wiek, imię i indywidualne potrzeby wspieranej osoby. Zależało nam zmniejszeniu dystansu między pomagającymi a osobami w ośrodkach. Współpracujący z nami zespół wolontariuszy pilnował by każda paczka była kompletna i odpowiadała wymaganiom danego SOC’u. Dzięki tej akcji udało nam się ponad 1000 dostosowanych do indywidualnych potrzeb, imiennych paczek.</p>
     <p class="flex-center">
@@ -76,7 +68,7 @@
 </div>
 
 <div class="container">
-    <h1 class="background-2">Wesprzyj nas</h1>
+    <h1 id="wesprzyj" class="background-2">Wesprzyj nas</h1>
     <p>
         Dzięki waszym wpłatom możemy dalej skutecznie działać! Dziękujemy za Wasze zaufanie i każdą wpłaconą złotówkę!
     </p>
@@ -92,7 +84,7 @@
     </p>
 </div>
 <div class="container">
-    <h1 class="background-3">Socjalmedia</h1>
+    <h1 id="social" class="background-3">Socjalmedia</h1>
     <p>
         Instagram: <a href="https://www.instagram.com/podroznychugoscic_pl/">@podroznychugoscic_pl</a>
     </p>
@@ -104,17 +96,24 @@
     </p>
 </div>
 <div class="container">
-    <h1 class="background-4">Regulamin</h1>
+    <h1 id="regulamin" class="background-4">Regulamin</h1>
     <p>
         Regulamin jest dostępny do popbrania <a href="Regulamin_Podróżnych_Ugościć.pdf">tutaj.</a>
     </p>
 </div>
 <div class="container">
-    <h1 class="background-5">Napisz do nas</h1>
+    <h1 id="kontakt" class="background-5">Napisz do nas</h1>
     <p>
         Zawsze możesz skontaktować się z nami przez nasz adres email: <br>
         <a href="mailto:Podroznychugoscic@gmail.com">Podroznychugoscic@gmail.com</a>
     </p>
 </div>
+<script>
+    document.querySelector('.arrow-down-icon')
+        .addEventListener('click', () => {
+            console.log('click')
+            window.scroll(0, window.innerHeight);
+        });
+</script>
 </body>
 </html>

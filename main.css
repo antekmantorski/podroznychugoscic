@@ -40,14 +40,34 @@ p {
     justify-content: center;
 }
 
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.nav-links > * {
+    border: 3px solid #363739;
+    border-radius: 25px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
 .arrow-down-icon {
     width: 50px;
     height: 50px;
-    position: absolute;
-    bottom: 20px;
-    border: 3px solid #363739;
-    border-radius: 50%;
-    cursor: pointer;
+    padding: 0;
 }
 
 .logo {
