@@ -87,6 +87,11 @@ p {
     background-image: url("img14.JPG");
 }
 
+.images-row-wrapper {
+    width: 100vw;
+    overflow: hidden;
+}
+
 .images-row {
     width: 100%;
     overflow: visible;
