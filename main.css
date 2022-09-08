@@ -11,7 +11,7 @@ body, html {
     scroll-behavior: smooth;
 }
 
-.card {
+.full-size {
     width: 100vw;
     height: 100vh;
 }
@@ -34,17 +34,13 @@ p {
     line-height: 2rem;
 }
 
-.center {
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.relative {
-    position: relative;
-}
-
-.arrow-down {
+.arrow-down-icon {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -58,17 +54,6 @@ p {
     max-width: 70%;
     margin: 0 auto;
     display: block;
-}
-
-nav {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-}
-
-.email {
-    font-size: 2rem;
-    word-wrap: anywhere;
 }
 
 .background-1,
@@ -123,14 +108,4 @@ nav {
 .images-row img {
     height: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-}
-
-
-.home-animation{
-    animation: 5s image-strip-scroll infinite alternate;
-}
-
-@keyframes image-strip-scroll {
-    from { transform: scale(1); }
-    to { transform: scale(1.05); }
 }
